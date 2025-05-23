@@ -12,7 +12,7 @@ export class PusherService {
   });
   constructor() {}
 
-  subscribeToChannel<T>(
+  connectToChat<T>(
     channelName: string = environment.pusher.channel,
     eventName = environment.pusher.event,
   ): Observable<T> {
